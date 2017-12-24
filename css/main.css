@@ -1,1 +1,78 @@
+/*--------------Generales----------------*/
+:root {
+  --pink: #D70986;
+  --purple: #680166;
+  --white: #FFFFFF;
+}
 
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.gradiente {
+  background: linear-gradient(var(--purple), var(--pink));
+}
+
+.vh-10 {
+  height: 10vh;
+
+}
+
+.vh-20 {
+  height: 18vh;
+}
+
+.vh-100 {
+   height: 100vh;
+}
+
+.pd-bootom-30 {
+  padding-bottom: 30vh;
+}
+
+
+
+.inline {
+  display: inline;
+}
+
+/*Imagen de fondo en register*/
+
+.hero-image {
+  background:  url('../assets/images/taxi.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.col-xs-9 {
+  border: 1px solid blue;
+}
+
+.dp-inline {
+  display: inline;
+}
+
+.btn-register {
+  color: var(--white);
+  border: 1px solid var(--white);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.btn-default {
+  background: none;
+  padding: 2vh 3vh;
+  text-shadow: 0px 0px 2px #FAB1FF;
+  font-weight: bold;
+}
+
+.btn-register:hover {
+  color: var(--pink);
+  background: var(--white);
+  /* font-weight: bold; */
+}
