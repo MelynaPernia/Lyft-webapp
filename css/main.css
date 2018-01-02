@@ -1,27 +1,72 @@
-/*--------------Generales----------------*/
+/*--------------Colors----------------*/
 :root {
+  --black: #000000;
+  --gray: #C3C3C3;
+  --graydark: #8E8E8E;
   --pink: #D70986;
   --purple: #680166;
   --white: #FFFFFF;
 }
-
+/*--------------Setear----------------*/
 body {
   font-family: 'Rubik', sans-serif;
 }
 
-.container-flex {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.btn-default {
+  background: none;
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 2vh 3vw;
 }
 
+.btn-default:hover {
+  color: var(--pink);
+  background: var(--white);
+}
+/*--------------Generales----------------*/
 .gradiente {
   background: linear-gradient(var(--purple), var(--pink));
 }
 
+.bor-none {
+  border: none;
+}
+
+.bg-none {
+  background: var(--white);
+}
+
+.dp-inline {
+  display: inline;
+}
+
+.inline {
+  display: inline;
+}
+
+.mg-bottom-0 {
+  margin-bottom: 0px;
+}
+
+.mg-top-0 {
+  margin-top: 0px;
+}
+
+.pd-0 {
+  padding: 0px;
+}
+
+.pd-1 {
+  padding: 1px;
+}
+
+.pd-bootom-30 {
+  padding-bottom: 30vh;
+}
+
 .vh-10 {
   height: 10vh;
-
 }
 
 .vh-20 {
@@ -29,50 +74,111 @@ body {
 }
 
 .vh-100 {
-   height: 100vh;
+  height: 100vh;
 }
 
-.pd-bootom-30 {
-  padding-bottom: 30vh;
+/*------ Estilos del index -----*/
+.container-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-
-
-
-.inline {
-  display: inline;
-}
-
-/*Imagen de fondo en register*/
-
-.hero-image {
-  background:  url('../assets/images/taxi.jpg');
+/*------ Estilos de la vista singup -----*/
+.hero-imagen {
+  background: url('../assets/images/taxi.png');
   background-position: center;
   background-size: cover;
 }
 
-.col-xs-9 {
-  border: 1px solid blue;
+/*------ Estilos de la vista registernumber -----*/
+.btn-countries {
+  border: 1px solid var(--gray);
 }
 
-.dp-inline {
-  display: inline;
+.btn-next {
+  background: var(--gray);
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 3px 5px var(--gray);
+  color: var(--graydark);
+  padding: 3vh 0;
 }
 
-.btn-register {
+.btn-enabled {
+  background: var(--pink);
   color: var(--white);
-  border: 1px solid var(--white);
-  font-weight: bold;
-  letter-spacing: 0.1em;
-}
-.btn-default {
-  background: none;
-  padding: 2vh 3vh;
-  text-shadow: 0px 0px 2px #FAB1FF;
-  font-weight: bold;
 }
 
-.btn-register:hover {
+.btn-enabled:hover {
+  color: var(--white);
+}
+
+.list-countries {
+  margin: 0;
+  padding: 0
+  width: 60px;
+}
+
+.list-countries li{
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+.list-countries img{
+  height: 30px;
+  padding-left: 20px;
+}
+
+.dropdown-toggle {
+  width: 70px;
+}
+
+.dropdown-toggle img {
+  display: inline-block;
+  height: 16px;
+  padding-right: 5px;
+}
+/*------ Estilos de la vista verifynumber -----*/
+#verify-number i {
   color: var(--pink);
-  background: var(--white);
-  /* font-weight: bold; */
+}
+
+.cell-number {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--purple);
+  box-shadow: none;
+}
+
+.btn-enabled-verify, .btn-enabled-register-data {
+  background: linear-gradient(to right, var(--pink), var(--purple));
+  color: var(--white);
+}
+
+.btn-prev-register-number, .btn-prev-verify-number {
+  background: none;
+}
+
+/*------ Estilos de la vista registerdata -----*/
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#firstName, #lastName {
+  display: inline;
+  width: 50%;
+}
+/*------ Estilos de la vista registersuccess -----*/
+.container-flex-registersuccess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-register-success i {
+  color: var(--white);
 }
